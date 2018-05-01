@@ -1,5 +1,5 @@
 # Migracion-PDI
-
+#PARTE RAFAEL
 from PIL import Image #nos servirá para abrir o manipular una imagen en python
 import os
 import numpy as np
