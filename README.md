@@ -32,3 +32,22 @@ cnosal=[0,0,255]
 
 indsal=(I1[:,:,1]==csal(1) and I1[:,:,2]==csal(2)and I1[:,:,3]==csal(3));
             
+#######################
+CODIGO DE HECTOR, LO MISMO QUE HIZO RAFA PERO MAS COMPACTO :3
+def prueba1():
+    
+    ruta = ('C:/CursoPython/imagenes/1.png')
+    ruta2 = ('C:/CursoPython/imagenes/2.png')
+    imo = Image.open(ruta)
+    imo = imo.convert('L')
+    print(imo.size)
+    print(imo.mode)
+    
+
+    im = io.imread(ruta2)
+    print(im.shape)
+    imout = np.zeros(im.size)  
+    [filas, columnas] = im.size
+    
+    csal = [237,28,36]
+    cnosal = [0,0,255]
